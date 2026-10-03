@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="722" height="252" viewBox="0 0 722 252" role="img" aria-label="usage-bar: bars above the prompt" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14">
+<rect width="722" height="252" rx="12" fill="#1e1f26"/>
+<rect width="722" height="38" rx="12" fill="#2a2c35"/><rect y="26" width="722" height="12" fill="#2a2c35"/>
+<circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
+<text x="361.0" y="24" text-anchor="middle" fill="#7d8290" font-size="12">usage-bar: bars above the prompt</text>
+<text x="24.0" y="71" fill="#7d8290" text-anchor="start" xml:space="preserve">plenty of room</text>
+<text x="24.0" y="93" fill="#7d8290" text-anchor="start" xml:space="preserve">ctx</text>
+<rect x="57.7" y="84" width="84.3" height="10" rx="2" fill="#343743"/>
+<rect x="57.7" y="84" width="35.4" height="10" rx="2" fill="#8fd694"/>
+<text x="150.4" y="93" fill="#8fd694" text-anchor="start" xml:space="preserve">42%</text>
+<text x="192.6" y="93" fill="#7d8290" text-anchor="start" xml:space="preserve">5h</text>
+<rect x="217.9" y="84" width="84.3" height="10" rx="2" fill="#343743"/>
+<rect x="217.9" y="84" width="15.2" height="10" rx="2" fill="#8fd694"/>
+<text x="310.6" y="93" fill="#8fd694" text-anchor="start" xml:space="preserve">18%</text>
+<text x="352.8" y="93" fill="#7d8290" text-anchor="start" xml:space="preserve">7d</text>
+<rect x="378.1" y="84" width="84.3" height="10" rx="2" fill="#343743"/>
+<rect x="378.1" y="84" width="26.1" height="10" rx="2" fill="#8fd694"/>
+<text x="470.8" y="93" fill="#8fd694" text-anchor="start" xml:space="preserve">31%</text>
+<text x="512.9" y="93" fill="#7d8290" text-anchor="start" xml:space="preserve">$1.24</text>
+<text x="24.0" y="115" fill="#c3a6ff" font-weight="700" text-anchor="start" xml:space="preserve">❯</text>
+<text x="40.9" y="115" fill="#d7dae0" text-anchor="start" xml:space="preserve">▏</text>
+<text x="24.0" y="159" fill="#7d8290" text-anchor="start" xml:space="preserve">context at 88%: a toast nudges you, a Compact button appears</text>
+<text x="24.0" y="181" fill="#7d8290" text-anchor="start" xml:space="preserve">ctx</text>
+<rect x="57.7" y="172" width="84.3" height="10" rx="2" fill="#343743"/>
+<rect x="57.7" y="172" width="74.2" height="10" rx="2" fill="#f5c06b"/>
+<text x="150.4" y="181" fill="#f5c06b" text-anchor="start" xml:space="preserve">88%</text>
+<text x="192.6" y="181" fill="#7d8290" text-anchor="start" xml:space="preserve">5h</text>
+<rect x="217.9" y="172" width="84.3" height="10" rx="2" fill="#343743"/>
+<rect x="217.9" y="172" width="62.4" height="10" rx="2" fill="#f5c06b"/>
+<text x="310.6" y="181" fill="#f5c06b" text-anchor="start" xml:space="preserve">74%</text>
+<text x="352.8" y="181" fill="#7d8290" text-anchor="start" xml:space="preserve">7d</text>
+<rect x="378.1" y="172" width="84.3" height="10" rx="2" fill="#343743"/>
+<rect x="378.1" y="172" width="77.6" height="10" rx="2" fill="#f2777a"/>
+<text x="470.8" y="181" fill="#f2777a" text-anchor="start" xml:space="preserve">92%</text>
+<text x="512.9" y="181" fill="#7d8290" text-anchor="start" xml:space="preserve">$6.80</text>
+<rect x="571.9" y="167" width="75.9" height="19" rx="4" fill="#f5c06b"/>
+<text x="580.4" y="181" fill="#1e1f26" font-weight="700" text-anchor="start" xml:space="preserve">Compact</text>
+<text x="24.0" y="203" fill="#c3a6ff" font-weight="700" text-anchor="start" xml:space="preserve">❯</text>
+<text x="40.9" y="203" fill="#d7dae0" text-anchor="start" xml:space="preserve">▏</text>
+</svg>

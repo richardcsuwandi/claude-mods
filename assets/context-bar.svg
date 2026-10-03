@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="756" height="208" viewBox="0 0 756 208" role="img" aria-label="context-bar: stacked context window" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14">
+<rect width="756" height="208" rx="12" fill="#1e1f26"/>
+<rect width="756" height="38" rx="12" fill="#2a2c35"/><rect y="26" width="756" height="12" fill="#2a2c35"/>
+<circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
+<text x="378.0" y="24" text-anchor="middle" fill="#7d8290" font-size="12">context-bar: stacked context window</text>
+<rect x="24.0" y="61" width="674.4" height="12" rx="3" fill="#343743"/>
+<rect x="24.0" y="61" width="9.8" height="12" fill="#c3a6ff"/>
+<rect x="33.8" y="61" width="30.7" height="12" fill="#8fd694"/>
+<rect x="64.5" y="61" width="11.5" height="12" fill="#f5c06b"/>
+<rect x="75.9" y="61" width="163.9" height="12" fill="#6cb6ff"/>
+<rect x="587.1" y="61" width="111.3" height="12" rx="3" fill="#7d8290" fill-opacity=".45"/>
+<text x="24.0" y="93" fill="#7d8290" text-anchor="start" xml:space="preserve">64.0k/200.0k (32%)</text>
+<text x="201.0" y="93" fill="#c3a6ff" text-anchor="start" xml:space="preserve">■ System prompt 2.9k</text>
+<text x="386.5" y="93" fill="#8fd694" text-anchor="start" xml:space="preserve">■ System tools 9.1k</text>
+<text x="24.0" y="115" fill="#f5c06b" text-anchor="start" xml:space="preserve">■ Memory files 3.4k</text>
+<text x="201.0" y="115" fill="#6cb6ff" text-anchor="start" xml:space="preserve">■ Messages 48.6k</text>
+<text x="24.0" y="159" fill="#c3a6ff" font-weight="700" text-anchor="start" xml:space="preserve">❯</text>
+<text x="40.9" y="159" fill="#d7dae0" text-anchor="start" xml:space="preserve">▏</text>
+</svg>

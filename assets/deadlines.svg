@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="739" height="318" viewBox="0 0 739 318" role="img" aria-label="deadlines: /ddl and the status line" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14">
+<rect width="739" height="318" rx="12" fill="#1e1f26"/>
+<rect width="739" height="38" rx="12" fill="#2a2c35"/><rect y="26" width="739" height="12" fill="#2a2c35"/>
+<circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
+<text x="369.5" y="24" text-anchor="middle" fill="#7d8290" font-size="12">deadlines: /ddl and the status line</text>
+<text x="24.0" y="71" fill="#c3a6ff" font-weight="700" text-anchor="start" xml:space="preserve">❯</text>
+<text x="40.9" y="71" fill="#d7dae0" text-anchor="start" xml:space="preserve">/ddl</text>
+<rect x="24.0" y="81" width="674.4" height="108" rx="8" fill="none" stroke="#7d8290" stroke-opacity=".6"/>
+<text x="40.9" y="115" fill="#d7dae0" font-weight="700" text-anchor="start" xml:space="preserve">Deadlines</text>
+<text x="40.9" y="137" fill="#d7dae0" text-anchor="start" xml:space="preserve">⏳</text>
+<text x="66.2" y="137" fill="#f5c06b" font-weight="700" text-anchor="start" xml:space="preserve">AISTATS</text>
+<text x="201.0" y="137" fill="#d7dae0" font-weight="700" text-anchor="start" xml:space="preserve">4d 1h 53m</text>
+<rect x="302.2" y="128" width="134.9" height="10" rx="2" fill="#343743"/>
+<rect x="302.2" y="128" width="116.5" height="10" rx="2" fill="#f5c06b"/>
+<text x="453.9" y="137" fill="#7d8290" text-anchor="start" xml:space="preserve">Wed Oct 7 19:59 CST</text>
+<text x="40.9" y="159" fill="#d7dae0" text-anchor="start" xml:space="preserve">🗓</text>
+<text x="66.2" y="159" fill="#8fd694" font-weight="700" text-anchor="start" xml:space="preserve">AAAI rebuttal</text>
+<text x="201.0" y="159" fill="#d7dae0" font-weight="700" text-anchor="start" xml:space="preserve">23d 1h 53m</text>
+<rect x="302.2" y="150" width="134.9" height="10" rx="2" fill="#343743"/>
+<rect x="302.2" y="150" width="31.2" height="10" rx="2" fill="#8fd694"/>
+<text x="453.9" y="159" fill="#7d8290" text-anchor="start" xml:space="preserve">Mon Oct 26 19:59 CST</text>
+<text x="40.9" y="181" fill="#d7dae0" text-anchor="start" xml:space="preserve">🌱</text>
+<text x="66.2" y="181" fill="#8fd694" font-weight="700" text-anchor="start" xml:space="preserve">ICLR rebuttal</text>
+<text x="201.0" y="181" fill="#d7dae0" font-weight="700" text-anchor="start" xml:space="preserve">47d 1h 53m</text>
+<rect x="302.2" y="172" width="134.9" height="10" rx="2" fill="#343743"/>
+<text x="453.9" y="181" fill="#7d8290" text-anchor="start" xml:space="preserve">Thu Nov 19 19:59 CST</text>
+<text x="24.0" y="225" fill="#c3a6ff" font-weight="700" text-anchor="start" xml:space="preserve">❯</text>
+<text x="40.9" y="225" fill="#d7dae0" text-anchor="start" xml:space="preserve">▏</text>
+<line x1="24" x2="715.26" y1="242" y2="242" stroke="#343743"/>
+<text x="24.0" y="269" fill="#f5c06b" text-anchor="start" xml:space="preserve">◐ AISTATS  4d 1h 53m  +2</text>
+</svg>
