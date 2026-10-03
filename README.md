@@ -69,7 +69,7 @@ Three bars above the prompt: how full the context window is (`ctx`), and your 5-
 /usage-bar        toggle the bars (on by default)
 ```
 
-Updates after every turn. It reads the numbers Claude Code already tracks, so it makes no extra API calls.
+Updates after every turn.
 
 ---
 
