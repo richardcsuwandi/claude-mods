@@ -1,0 +1,11 @@
+{
+  "name": "richard-mods",
+  "owner": { "name": "Richard Suwandi" },
+  "plugins": [
+    {
+      "name": "deadlines",
+      "source": "./plugins/deadlines",
+      "description": "Live deadline countdowns in the Claude Code status line. /ddl to list, add, remove."
+    }
+  ]
+}
