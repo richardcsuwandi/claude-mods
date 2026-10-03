@@ -26,3 +26,7 @@ Emoji show how close it is: 🌱 > 30d, 🗓 < 30d, ⏳ < 7d, 😬 < 3d, 🔥 < 
 The bar fills over the last 30 days. Deadlines persist across sessions.
 
 Mods run with the same access as Claude Code itself; read the source before installing.
+
+### Where deadlines are saved
+
+In Claude Code's per-plugin store (`~/.claude/plugins/store/deadlines_<marketplace>-<hash>.json`), keyed by plugin and marketplace name, so updating the plugin keeps your list. A second copy is mirrored to `~/.claude/deadlines-backup.json`; if the store ever comes back empty or unreadable, `/ddl` restores from that copy instead of overwriting it. Renaming the marketplace creates a fresh store, so the backup is what saves you there.

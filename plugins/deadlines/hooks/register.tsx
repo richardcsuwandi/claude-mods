@@ -19,8 +19,54 @@ async function readTimezone($: EngineInterface) {
   tz = { offset: sign * (+z.slice(1, 3) * HOUR + +z.slice(3, 5) * 60_000), label: label || z }
 }
 
+// Deadlines live in $.store (Claude Code's per-plugin file) and are mirrored to a file of
+// our own, so a store that comes back empty (marketplace renamed, file rewritten on update)
+// is restored instead of silently overwritten by the next `add`.
+const isList = (v: unknown): v is Deadline[] =>
+  Array.isArray(v) && v.every(d => d && typeof d.name === 'string' && Number.isFinite(d.at))
+
+async function mirrorPath($: EngineInterface): Promise<string | undefined> {
+  const home = await $.env.get('HOME')
+  return home ? `${home}/.claude/${$.plugin.name}-backup.json` : undefined
+}
+
+async function readMirror($: EngineInterface): Promise<Deadline[] | undefined> {
+  try {
+    const path = await mirrorPath($)
+    const parsed = path ? JSON.parse(await $.fs.read(path)) : undefined
+    return isList(parsed) ? parsed : undefined
+  } catch {
+    return undefined
+  }
+}
+
+let mirrorChecked = false // only look at the mirror once per load while the store is empty
+
 async function load($: EngineInterface): Promise<Deadline[]> {
-  return ((await $.store.get('deadlines')) as Deadline[] | undefined) ?? SEED
+  const stored = await $.store.get('deadlines')
+  if (isList(stored)) return stored
+
+  if (stored !== undefined) await $.store.set('deadlines.corrupt', stored) // keep it, never overwrite blindly
+  if (mirrorChecked) return SEED
+  mirrorChecked = true
+
+  const mirror = await readMirror($)
+  if (mirror && mirror.length > 0) {
+    await $.store.set('deadlines', mirror)
+    $.ui.toast(`deadlines: restored ${mirror.length} from backup`)
+    return mirror
+  }
+  return SEED
+}
+
+async function save($: EngineInterface, list: Deadline[]) {
+  await $.store.set('deadlines', list)
+  try {
+    const path = await mirrorPath($)
+    if (path) await $.fs.write(path, JSON.stringify(list, null, 2))
+  } catch {
+    // ponytail: mirror is best effort, the store stays the source of truth
+  }
 }
 
 function left(ms: number): string {
@@ -62,6 +108,7 @@ export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await readTimezone($)
     await $.command.register({ name: 'ddl', description: 'Deadlines: list, add <name> <YYYY-MM-DD> [HH:MM] [aoe], rm <name>' })
+    await save($, await load($)) // restores from the mirror if needed, and backfills the mirror
     $.clock.every(15_000, () => void refresh($))
     await refresh($)
     return next(e)
@@ -75,13 +122,13 @@ export const register: Register = on => {
     if (add) {
       const [, name, y, mo, d, hh = '23', mm = '59', aoe] = add
       const at = Date.UTC(+y, +mo - 1, +d, +hh, +mm) - (aoe ? AOE : tz.offset)
-      await $.store.set('deadlines', [...list.filter(x => x.name !== name), { name, at }])
+      await save($, [...list.filter(x => x.name !== name), { name, at }])
       await refresh($)
       return { text: `Added ${name}: ${local(at)}` }
     }
     if (rm) {
       const kept = list.filter(x => x.name.toLowerCase() !== rm[1].toLowerCase())
-      await $.store.set('deadlines', kept)
+      await save($, kept)
       await refresh($)
       return { text: kept.length < list.length ? `Removed ${rm[1]}` : `No deadline named ${rm[1]}` }
     }
