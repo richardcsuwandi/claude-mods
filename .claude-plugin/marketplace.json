@@ -1,11 +1,24 @@
 {
   "name": "claude-mods",
-  "owner": { "name": "Richard Suwandi" },
+  "owner": {
+    "name": "Richard Suwandi"
+  },
   "plugins": [
     {
       "name": "deadlines",
       "source": "./plugins/deadlines",
       "description": "Live deadline countdowns in the Claude Code status line. /ddl to list, add, remove."
+    },
+    {
+      "name": "usage-bar",
+      "source": "./plugins/usage-bar",
+      "description": "Usage bars (context, 5h, 7d, cost) above the prompt plus an auto-compact nudge. Toggle with /usage-bar."
+    },
+    {
+      "name": "context-bar",
+      "source": "./plugins/context-bar",
+      "description": "Stacked context-window bar above the prompt, colored like /context. Toggle with /context-bar."
     }
-  ]
+  ],
+  "description": "Claude Code mods by Richard Suwandi: deadline countdowns, usage and context bars."
 }

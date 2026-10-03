@@ -1,0 +1,9 @@
+{
+  "name": "context-bar",
+  "version": "0.1.0",
+  "description": "Stacked context-window bar above the prompt, colored like /context; toggle with /context-bar",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Richard Suwandi"
+  }
+}

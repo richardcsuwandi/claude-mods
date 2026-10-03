@@ -1,0 +1,9 @@
+{
+  "name": "usage-bar",
+  "version": "0.1.0",
+  "description": "Usage bars (context, 5h, 7d, cost) above the prompt plus an auto-compact nudge; toggle with /usage-bar",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Richard Suwandi"
+  }
+}

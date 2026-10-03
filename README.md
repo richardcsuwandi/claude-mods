@@ -10,6 +10,14 @@ My [Claude Code mods](https://claude.com/blog/claude-code-mods).
 /reload-plugins
 ```
 
+Swap `deadlines` for any mod below.
+
+| Mod | What it does |
+| --- | --- |
+| `deadlines` | Live deadline countdowns in the status line, `/ddl` to manage them |
+| `usage-bar` | Context, 5h, 7d and cost bars above the prompt, plus an auto-compact nudge. `/usage-bar` toggles it |
+| `context-bar` | Stacked context-window bar colored like `/context`. `/context-bar` toggles it |
+
 ## deadlines
 
 Live countdown to your next deadline in the status line, plus `/ddl` to see them all.
