@@ -29,10 +29,29 @@ Keeps your upcoming deadlines in the status line and shows all of them on demand
 ```
 /ddl                                          list everything as a card
 /ddl add AISTATS 2026-10-06 aoe               add a deadline (time defaults to 23:59)
-/ddl add Group meeting 2026-10-16 14:00       times are your local time...
-/ddl add ICLR rebuttal 2026-11-18 23:59 aoe   ...or Anywhere on Earth with `aoe`
+/ddl add Group meeting 2026-10-16 14:00       no zone = your local time
+/ddl add ICML 2027-01-28 23:59 pst            any zone from the table below
+/ddl add Thesis 2026-12-01 17:00 wib          Indonesia (WIB, WITA, WIT all work)
+/ddl add Review 2026-11-03 09:00 +05:30       or a plain UTC offset (also utc-5, gmt+7)
 /ddl rm AISTATS                               remove one
 ```
+
+Whatever zone you type, the deadline is stored as an exact moment and shown in your own local time, so the countdown is always right. The confirmation echoes both, for example `Added ICML: Fri Jan 29 12:00 CST (2027-01-28 23:59 PST, UTC-08:00)`.
+
+**Time zones**
+
+| Region | Zones |
+| --- | --- |
+| Anywhere | `aoe` (UTC-12, "Anywhere on Earth"), `utc`, `gmt`, `local` (your machine) |
+| US and Canada | `pst` `pdt` `mst` `mdt` `cst` `cdt` `est` `edt` `akst` `akdt` `hst` `ast` `nst`, plus `pt` `mt` `ct` `et`, which pick standard or daylight time from the deadline's date |
+| Europe | `wet` `west` `bst` `cet` `cest` `eet` `eest` `msk` |
+| Asia | `ist` (India) `pkt` `npt` `ict` `wib` `wita` `wit` `sgt` `hkt` `pht` `jst` `kst` |
+| Oceania | `awst` `acst` `aest` `aedt` `nzst` `nzdt` |
+| Any other | an offset such as `+08:00`, `-0530`, `+7`, `utc+7`, `gmt-5` |
+
+Some abbreviations are ambiguous. `cst` means your own zone if that's what your machine reports (so it is China Standard Time in Shanghai) and US Central otherwise. `ist` is India. For anything else, use an offset. An unknown zone is refused with a message and nothing is saved.
+
+`pt`, `et`, `ct` and `mt` follow the US rule (second Sunday of March to first Sunday of November). `cet` is always UTC+1, so use `cest` for European summer deadlines.
 
 **How to read it**
 
@@ -48,7 +67,7 @@ The bar in each row fills up over the last 30 days. Deadlines that have passed s
 
 **Where your deadlines are saved**
 
-In Claude Code's per-plugin store (`~/.claude/plugins/store/deadlines_<marketplace>-<hash>.json`). The file name depends on the plugin and marketplace names only, so updating the plugin keeps your list. A second copy is mirrored to `~/.claude/deadlines-backup.json`: if the store ever comes back empty or unreadable, `/ddl` restores from that copy instead of overwriting it, and keeps the unreadable value under `deadlines.corrupt`. Renaming the marketplace creates a fresh store, which is what the backup covers. Persistence tests live in `plugins/deadlines/tests/` (run them with `claude plugin test plugins/deadlines`).
+In Claude Code's per-plugin store (`~/.claude/plugins/store/deadlines_<marketplace>-<hash>.json`). The file name depends on the plugin and marketplace names only, so updating the plugin keeps your list. A second copy is mirrored to `~/.claude/deadlines-backup.json`: if the store ever comes back empty or unreadable, `/ddl` restores from that copy instead of overwriting it, and keeps the unreadable value under `deadlines.corrupt`. Renaming the marketplace creates a fresh store, which is what the backup covers. Persistence tests and time zone parsing live in `plugins/deadlines/tests/` (run them with `claude plugin test plugins/deadlines`).
 
 **Notes**
 

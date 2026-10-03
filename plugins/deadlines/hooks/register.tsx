@@ -3,9 +3,46 @@ import type { EngineInterface, Register } from 'claude-code'
 type Deadline = { name: string; at: number } // at: epoch ms
 
 const HOUR = 3_600_000
-const AOE = -12 * HOUR // Anywhere on Earth = UTC-12
 const SEED: Deadline[] = []
-const USAGE = 'Usage: /ddl, /ddl add <name> <YYYY-MM-DD> [HH:MM] [aoe], /ddl rm <name>'
+const USAGE = 'Usage: /ddl, /ddl add <name> <YYYY-MM-DD> [HH:MM] [zone], /ddl rm <name>. Zones: aoe utc pst pt est et cet wib jst sgt ist ... or +08:00'
+
+// Fixed UTC offsets in minutes. Daylight-saving zones come as pairs (est/edt), or as et/ct/mt/pt
+// which pick the US rule for the deadline's date.
+// ponytail: `ist` is India and `cst` US Central unless it matches your machine's own label.
+const ZONES: Record<string, number> = {
+  aoe: -720, utc: 0, gmt: 0, z: 0,
+  hst: -600, akst: -540, akdt: -480, pst: -480, pdt: -420, mst: -420, mdt: -360,
+  cst: -360, cdt: -300, est: -300, edt: -240, ast: -240, nst: -210,
+  wet: 0, west: 60, bst: 60, cet: 60, cest: 120, eet: 120, eest: 180, msk: 180,
+  ist: 330, pkt: 300, npt: 345, ict: 420, wib: 420, wita: 480, wit: 540,
+  sgt: 480, hkt: 480, pht: 480, awst: 480, jst: 540, kst: 540, acst: 570,
+  aest: 600, aedt: 660, nzst: 720, nzdt: 780,
+}
+const US_AUTO: Record<string, [number, number]> = { et: [-300, -240], ct: [-360, -300], mt: [-420, -360], pt: [-480, -420] }
+
+// US daylight saving: second Sunday of March to first Sunday of November (the 2am edge is ignored).
+function isUsDst(y: number, mo: number, d: number): boolean {
+  const sunday = (month: number, nth: number) => {
+    const first = new Date(Date.UTC(y, month - 1, 1)).getUTCDay()
+    return 1 + ((7 - first) % 7) + 7 * (nth - 1)
+  }
+  const day = mo * 100 + d
+  return day >= 300 + sunday(3, 2) && day < 1100 + sunday(11, 1)
+}
+
+// Offset in minutes for a zone word typed after the date, or undefined when it isn't one.
+function zoneOffset(word: string, y: number, mo: number, d: number, local: { offset: number; label: string }): number | undefined {
+  const w = word.toLowerCase()
+  if (w === 'local' || w === local.label.toLowerCase()) return local.offset / 60_000
+  if (w in US_AUTO) return US_AUTO[w][isUsDst(y, mo, d) ? 1 : 0]
+  if (w in ZONES) return ZONES[w]
+  const num = w.match(/^(?:utc|gmt)?([+-])(\d{1,2})(?::?(\d{2}))?$/)
+  if (!num) return undefined
+  const mins = +num[2] * 60 + +(num[3] ?? 0)
+  return num[1] === '-' ? -mins : mins
+}
+
+const fmtOffset = (m: number) => `UTC${m < 0 ? '-' : '+'}${String(Math.floor(Math.abs(m) / 60)).padStart(2, '0')}:${String(Math.abs(m) % 60).padStart(2, '0')}`
 
 // The module has no reliable timezone, so ask the host once.
 // ponytail: offset read at session start, a DST switch mid-session is off by 1h until restart.
@@ -107,7 +144,7 @@ async function refresh($: EngineInterface) {
 export const register: Register = on => {
   on('session.start', async ($, e, next) => {
     await readTimezone($)
-    await $.command.register({ name: 'ddl', description: 'Deadlines: list, add <name> <YYYY-MM-DD> [HH:MM] [aoe], rm <name>' })
+    await $.command.register({ name: 'ddl', description: 'Deadlines: list, add <name> <YYYY-MM-DD> [HH:MM] [zone], rm <name>' })
     await save($, await load($)) // restores from the mirror if needed, and backfills the mirror
     $.clock.every(15_000, () => void refresh($))
     await refresh($)
@@ -116,15 +153,18 @@ export const register: Register = on => {
 
   on('command.run', { command: 'ddl' }, async ($, e) => {
     const list = await load($)
-    const add = e.args.match(/^\s*add\s+(.+?)\s+(\d{4})-(\d{2})-(\d{2})(?:\s+(\d{1,2}):(\d{2}))?(\s+aoe)?\s*$/i)
+    const add = e.args.match(/^\s*add\s+(.+?)\s+(\d{4})-(\d{2})-(\d{2})(?:\s+(\d{1,2}):(\d{2}))?(?:\s+(\S+))?\s*$/i)
     const rm = e.args.match(/^\s*rm\s+(.+?)\s*$/)
 
     if (add) {
-      const [, name, y, mo, d, hh = '23', mm = '59', aoe] = add
-      const at = Date.UTC(+y, +mo - 1, +d, +hh, +mm) - (aoe ? AOE : tz.offset)
+      const [, name, y, mo, d, hh = '23', mm = '59', zone] = add
+      const mins = zone === undefined ? tz.offset / 60_000 : zoneOffset(zone, +y, +mo, +d, tz)
+      if (mins === undefined) return { text: `Unknown time zone "${zone}". ${USAGE}` }
+      const at = Date.UTC(+y, +mo - 1, +d, +hh, +mm) - mins * 60_000
       await save($, [...list.filter(x => x.name !== name), { name, at }])
       await refresh($)
-      return { text: `Added ${name}: ${local(at)}` }
+      const entered = zone === undefined ? '' : ` (${y}-${mo}-${d} ${hh.padStart(2, '0')}:${mm} ${zone.toUpperCase()}, ${fmtOffset(mins)})`
+      return { text: `Added ${name}: ${local(at)}${entered}` }
     }
     if (rm) {
       const kept = list.filter(x => x.name.toLowerCase() !== rm[1].toLowerCase())

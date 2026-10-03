@@ -1,6 +1,6 @@
 {
   "name": "deadlines",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Live deadline countdowns in the Claude Code status line. /ddl to list, add, remove.",
   "author": { "name": "Richard Suwandi" }
 }
