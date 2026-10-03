@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="706" height="262" viewBox="0 0 706 262" role="img" aria-label="monitor: background jobs running, then done and failed" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace" font-size="14">
+<style>@keyframes v1{0.000%{opacity:1}31.250%{opacity:0}}
+.v1{opacity:0;animation:v1 16.0s step-end infinite}
+@keyframes v2{0.000%{opacity:1}31.250%{opacity:0}}
+.v2{opacity:0;animation:v2 16.0s step-end infinite}
+@keyframes v3{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}43.750%{opacity:0}}
+.v3{opacity:0;animation:v3 16.0s step-end infinite}
+@keyframes v4{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}43.750%{opacity:0}}
+.v4{opacity:0;animation:v4 16.0s step-end infinite}
+@keyframes v5{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}43.750%{opacity:0}}
+.v5{opacity:0;animation:v5 16.0s step-end infinite}
+@keyframes v6{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}62.500%{opacity:0}}
+.v6{opacity:0;animation:v6 16.0s step-end infinite}
+@keyframes v7{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}62.500%{opacity:0}}
+.v7{opacity:0;animation:v7 16.0s step-end infinite}
+@keyframes v8{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}62.500%{opacity:0}}
+.v8{opacity:0;animation:v8 16.0s step-end infinite}
+@keyframes v9{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}62.500%{opacity:0}}
+.v9{opacity:0;animation:v9 16.0s step-end infinite}
+@keyframes v10{0%{opacity:0}0.000%{opacity:0}62.500%{opacity:1}100.000%{opacity:0}}
+.v10{opacity:0;animation:v10 16.0s step-end infinite}
+@keyframes v11{0%{opacity:0}0.000%{opacity:0}62.500%{opacity:1}100.000%{opacity:0}}
+.v11{opacity:0;animation:v11 16.0s step-end infinite}
+@keyframes v12{0%{opacity:0}0.000%{opacity:0}62.500%{opacity:1}100.000%{opacity:0}}
+.v12{opacity:0;animation:v12 16.0s step-end infinite}
+@keyframes v13{0.000%{opacity:1}62.500%{opacity:0}}
+.v13{opacity:0;animation:v13 16.0s step-end infinite}
+@keyframes v14{0%{opacity:0}0.000%{opacity:0}62.500%{opacity:1}100.000%{opacity:0}}
+.v14{opacity:0;animation:v14 16.0s step-end infinite}
+@keyframes v15{0.000%{opacity:1}62.500%{opacity:0}}
+.v15{opacity:0;animation:v15 16.0s step-end infinite}
+@keyframes v16{0%{opacity:0}0.000%{opacity:0}62.500%{opacity:1}100.000%{opacity:0}}
+.v16{opacity:0;animation:v16 16.0s step-end infinite}
+@keyframes v17{0.000%{opacity:1}62.500%{opacity:0}}
+.v17{opacity:0;animation:v17 16.0s step-end infinite}
+@keyframes c18{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c18{opacity:0;fill:#343743;animation:c18 1.3s step-end infinite 0.0s,v18x 16.0s step-end infinite}
+@keyframes v18x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v19{0.000%{opacity:1}62.500%{opacity:0}}
+.v19{opacity:0;animation:v19 16.0s step-end infinite}
+@keyframes c20{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c20{opacity:0;fill:#343743;animation:c20 1.3s step-end infinite 0.1s,v20x 16.0s step-end infinite}
+@keyframes v20x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v21{0.000%{opacity:1}62.500%{opacity:0}}
+.v21{opacity:0;animation:v21 16.0s step-end infinite}
+@keyframes c22{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c22{opacity:0;fill:#343743;animation:c22 1.3s step-end infinite 0.2s,v22x 16.0s step-end infinite}
+@keyframes v22x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v23{0.000%{opacity:1}62.500%{opacity:0}}
+.v23{opacity:0;animation:v23 16.0s step-end infinite}
+@keyframes c24{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c24{opacity:0;fill:#343743;animation:c24 1.3s step-end infinite 0.3s,v24x 16.0s step-end infinite}
+@keyframes v24x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v25{0.000%{opacity:1}62.500%{opacity:0}}
+.v25{opacity:0;animation:v25 16.0s step-end infinite}
+@keyframes c26{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c26{opacity:0;fill:#343743;animation:c26 1.3s step-end infinite 0.4s,v26x 16.0s step-end infinite}
+@keyframes v26x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v27{0.000%{opacity:1}62.500%{opacity:0}}
+.v27{opacity:0;animation:v27 16.0s step-end infinite}
+@keyframes c28{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c28{opacity:0;fill:#343743;animation:c28 1.3s step-end infinite 0.5s,v28x 16.0s step-end infinite}
+@keyframes v28x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v29{0.000%{opacity:1}62.500%{opacity:0}}
+.v29{opacity:0;animation:v29 16.0s step-end infinite}
+@keyframes c30{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c30{opacity:0;fill:#343743;animation:c30 1.3s step-end infinite 0.6s,v30x 16.0s step-end infinite}
+@keyframes v30x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v31{0.000%{opacity:1}62.500%{opacity:0}}
+.v31{opacity:0;animation:v31 16.0s step-end infinite}
+@keyframes c32{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c32{opacity:0;fill:#343743;animation:c32 1.3s step-end infinite 0.7s,v32x 16.0s step-end infinite}
+@keyframes v32x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v33{0.000%{opacity:1}62.500%{opacity:0}}
+.v33{opacity:0;animation:v33 16.0s step-end infinite}
+@keyframes c34{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c34{opacity:0;fill:#343743;animation:c34 1.3s step-end infinite 0.8s,v34x 16.0s step-end infinite}
+@keyframes v34x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v35{0.000%{opacity:1}62.500%{opacity:0}}
+.v35{opacity:0;animation:v35 16.0s step-end infinite}
+@keyframes c36{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c36{opacity:0;fill:#343743;animation:c36 1.3s step-end infinite 0.9s,v36x 16.0s step-end infinite}
+@keyframes v36x{0%{opacity:1}62.500%{opacity:0}}
+@keyframes v37{0.000%{opacity:1}6.250%{opacity:0}}
+.v37{opacity:0;animation:v37 16.0s step-end infinite}
+@keyframes v38{0%{opacity:0}0.000%{opacity:0}6.250%{opacity:1}12.500%{opacity:0}}
+.v38{opacity:0;animation:v38 16.0s step-end infinite}
+@keyframes v39{0%{opacity:0}0.000%{opacity:0}12.500%{opacity:1}18.750%{opacity:0}}
+.v39{opacity:0;animation:v39 16.0s step-end infinite}
+@keyframes v40{0%{opacity:0}0.000%{opacity:0}18.750%{opacity:1}25.000%{opacity:0}}
+.v40{opacity:0;animation:v40 16.0s step-end infinite}
+@keyframes v41{0%{opacity:0}0.000%{opacity:0}25.000%{opacity:1}31.250%{opacity:0}}
+.v41{opacity:0;animation:v41 16.0s step-end infinite}
+@keyframes v42{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}37.500%{opacity:0}}
+.v42{opacity:0;animation:v42 16.0s step-end infinite}
+@keyframes v43{0%{opacity:0}0.000%{opacity:0}37.500%{opacity:1}43.750%{opacity:0}}
+.v43{opacity:0;animation:v43 16.0s step-end infinite}
+@keyframes v44{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}50.000%{opacity:0}}
+.v44{opacity:0;animation:v44 16.0s step-end infinite}
+@keyframes v45{0%{opacity:0}0.000%{opacity:0}50.000%{opacity:1}56.250%{opacity:0}}
+.v45{opacity:0;animation:v45 16.0s step-end infinite}
+@keyframes v46{0%{opacity:0}0.000%{opacity:0}56.250%{opacity:1}62.500%{opacity:0}}
+.v46{opacity:0;animation:v46 16.0s step-end infinite}
+@keyframes v47{0%{opacity:0}0.000%{opacity:0}62.500%{opacity:1}100.000%{opacity:0}}
+.v47{opacity:0;animation:v47 16.0s step-end infinite}
+@keyframes v48{0.000%{opacity:1}43.750%{opacity:0}}
+.v48{opacity:0;animation:v48 16.0s step-end infinite}
+@keyframes v49{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}100.000%{opacity:0}}
+.v49{opacity:0;animation:v49 16.0s step-end infinite}
+@keyframes v50{0.000%{opacity:1}43.750%{opacity:0}}
+.v50{opacity:0;animation:v50 16.0s step-end infinite}
+@keyframes v51{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}100.000%{opacity:0}}
+.v51{opacity:0;animation:v51 16.0s step-end infinite}
+@keyframes v52{0.000%{opacity:1}43.750%{opacity:0}}
+.v52{opacity:0;animation:v52 16.0s step-end infinite}
+@keyframes c53{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c53{opacity:0;fill:#343743;animation:c53 1.3s step-end infinite 0.0s,v53x 16.0s step-end infinite}
+@keyframes v53x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v54{0.000%{opacity:1}43.750%{opacity:0}}
+.v54{opacity:0;animation:v54 16.0s step-end infinite}
+@keyframes c55{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c55{opacity:0;fill:#343743;animation:c55 1.3s step-end infinite 0.1s,v55x 16.0s step-end infinite}
+@keyframes v55x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v56{0.000%{opacity:1}43.750%{opacity:0}}
+.v56{opacity:0;animation:v56 16.0s step-end infinite}
+@keyframes c57{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c57{opacity:0;fill:#343743;animation:c57 1.3s step-end infinite 0.2s,v57x 16.0s step-end infinite}
+@keyframes v57x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v58{0.000%{opacity:1}43.750%{opacity:0}}
+.v58{opacity:0;animation:v58 16.0s step-end infinite}
+@keyframes c59{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c59{opacity:0;fill:#343743;animation:c59 1.3s step-end infinite 0.3s,v59x 16.0s step-end infinite}
+@keyframes v59x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v60{0.000%{opacity:1}43.750%{opacity:0}}
+.v60{opacity:0;animation:v60 16.0s step-end infinite}
+@keyframes c61{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c61{opacity:0;fill:#343743;animation:c61 1.3s step-end infinite 0.4s,v61x 16.0s step-end infinite}
+@keyframes v61x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v62{0.000%{opacity:1}43.750%{opacity:0}}
+.v62{opacity:0;animation:v62 16.0s step-end infinite}
+@keyframes c63{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c63{opacity:0;fill:#343743;animation:c63 1.3s step-end infinite 0.5s,v63x 16.0s step-end infinite}
+@keyframes v63x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v64{0.000%{opacity:1}43.750%{opacity:0}}
+.v64{opacity:0;animation:v64 16.0s step-end infinite}
+@keyframes c65{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c65{opacity:0;fill:#343743;animation:c65 1.3s step-end infinite 0.6s,v65x 16.0s step-end infinite}
+@keyframes v65x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v66{0.000%{opacity:1}43.750%{opacity:0}}
+.v66{opacity:0;animation:v66 16.0s step-end infinite}
+@keyframes c67{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c67{opacity:0;fill:#343743;animation:c67 1.3s step-end infinite 0.7s,v67x 16.0s step-end infinite}
+@keyframes v67x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v68{0.000%{opacity:1}43.750%{opacity:0}}
+.v68{opacity:0;animation:v68 16.0s step-end infinite}
+@keyframes c69{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c69{opacity:0;fill:#343743;animation:c69 1.3s step-end infinite 0.8s,v69x 16.0s step-end infinite}
+@keyframes v69x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v70{0.000%{opacity:1}43.750%{opacity:0}}
+.v70{opacity:0;animation:v70 16.0s step-end infinite}
+@keyframes c71{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c71{opacity:0;fill:#343743;animation:c71 1.3s step-end infinite 0.9s,v71x 16.0s step-end infinite}
+@keyframes v71x{0%{opacity:1}43.750%{opacity:0}}
+@keyframes v72{0.000%{opacity:1}6.250%{opacity:0}}
+.v72{opacity:0;animation:v72 16.0s step-end infinite}
+@keyframes v73{0%{opacity:0}0.000%{opacity:0}6.250%{opacity:1}12.500%{opacity:0}}
+.v73{opacity:0;animation:v73 16.0s step-end infinite}
+@keyframes v74{0%{opacity:0}0.000%{opacity:0}12.500%{opacity:1}18.750%{opacity:0}}
+.v74{opacity:0;animation:v74 16.0s step-end infinite}
+@keyframes v75{0%{opacity:0}0.000%{opacity:0}18.750%{opacity:1}25.000%{opacity:0}}
+.v75{opacity:0;animation:v75 16.0s step-end infinite}
+@keyframes v76{0%{opacity:0}0.000%{opacity:0}25.000%{opacity:1}31.250%{opacity:0}}
+.v76{opacity:0;animation:v76 16.0s step-end infinite}
+@keyframes v77{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}37.500%{opacity:0}}
+.v77{opacity:0;animation:v77 16.0s step-end infinite}
+@keyframes v78{0%{opacity:0}0.000%{opacity:0}37.500%{opacity:1}43.750%{opacity:0}}
+.v78{opacity:0;animation:v78 16.0s step-end infinite}
+@keyframes v79{0%{opacity:0}0.000%{opacity:0}43.750%{opacity:1}100.000%{opacity:0}}
+.v79{opacity:0;animation:v79 16.0s step-end infinite}
+@keyframes v80{0.000%{opacity:1}31.250%{opacity:0}}
+.v80{opacity:0;animation:v80 16.0s step-end infinite}
+@keyframes v81{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}100.000%{opacity:0}}
+.v81{opacity:0;animation:v81 16.0s step-end infinite}
+@keyframes v82{0.000%{opacity:1}31.250%{opacity:0}}
+.v82{opacity:0;animation:v82 16.0s step-end infinite}
+@keyframes v83{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}100.000%{opacity:0}}
+.v83{opacity:0;animation:v83 16.0s step-end infinite}
+@keyframes v84{0.000%{opacity:1}31.250%{opacity:0}}
+.v84{opacity:0;animation:v84 16.0s step-end infinite}
+@keyframes c85{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c85{opacity:0;fill:#343743;animation:c85 1.3s step-end infinite 0.0s,v85x 16.0s step-end infinite}
+@keyframes v85x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v86{0.000%{opacity:1}31.250%{opacity:0}}
+.v86{opacity:0;animation:v86 16.0s step-end infinite}
+@keyframes c87{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c87{opacity:0;fill:#343743;animation:c87 1.3s step-end infinite 0.1s,v87x 16.0s step-end infinite}
+@keyframes v87x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v88{0.000%{opacity:1}31.250%{opacity:0}}
+.v88{opacity:0;animation:v88 16.0s step-end infinite}
+@keyframes c89{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c89{opacity:0;fill:#343743;animation:c89 1.3s step-end infinite 0.2s,v89x 16.0s step-end infinite}
+@keyframes v89x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v90{0.000%{opacity:1}31.250%{opacity:0}}
+.v90{opacity:0;animation:v90 16.0s step-end infinite}
+@keyframes c91{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c91{opacity:0;fill:#343743;animation:c91 1.3s step-end infinite 0.3s,v91x 16.0s step-end infinite}
+@keyframes v91x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v92{0.000%{opacity:1}31.250%{opacity:0}}
+.v92{opacity:0;animation:v92 16.0s step-end infinite}
+@keyframes c93{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c93{opacity:0;fill:#343743;animation:c93 1.3s step-end infinite 0.4s,v93x 16.0s step-end infinite}
+@keyframes v93x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v94{0.000%{opacity:1}31.250%{opacity:0}}
+.v94{opacity:0;animation:v94 16.0s step-end infinite}
+@keyframes c95{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c95{opacity:0;fill:#343743;animation:c95 1.3s step-end infinite 0.5s,v95x 16.0s step-end infinite}
+@keyframes v95x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v96{0.000%{opacity:1}31.250%{opacity:0}}
+.v96{opacity:0;animation:v96 16.0s step-end infinite}
+@keyframes c97{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c97{opacity:0;fill:#343743;animation:c97 1.3s step-end infinite 0.6s,v97x 16.0s step-end infinite}
+@keyframes v97x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v98{0.000%{opacity:1}31.250%{opacity:0}}
+.v98{opacity:0;animation:v98 16.0s step-end infinite}
+@keyframes c99{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c99{opacity:0;fill:#343743;animation:c99 1.3s step-end infinite 0.7s,v99x 16.0s step-end infinite}
+@keyframes v99x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v100{0.000%{opacity:1}31.250%{opacity:0}}
+.v100{opacity:0;animation:v100 16.0s step-end infinite}
+@keyframes c101{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c101{opacity:0;fill:#343743;animation:c101 1.3s step-end infinite 0.8s,v101x 16.0s step-end infinite}
+@keyframes v101x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v102{0.000%{opacity:1}31.250%{opacity:0}}
+.v102{opacity:0;animation:v102 16.0s step-end infinite}
+@keyframes c103{0%{fill:#6cb6ff}22%{fill:#6cb6ff}23%{fill:#343743}100%{fill:#343743}}
+.c103{opacity:0;fill:#343743;animation:c103 1.3s step-end infinite 0.9s,v103x 16.0s step-end infinite}
+@keyframes v103x{0%{opacity:1}31.250%{opacity:0}}
+@keyframes v104{0.000%{opacity:1}6.250%{opacity:0}}
+.v104{opacity:0;animation:v104 16.0s step-end infinite}
+@keyframes v105{0%{opacity:0}0.000%{opacity:0}6.250%{opacity:1}12.500%{opacity:0}}
+.v105{opacity:0;animation:v105 16.0s step-end infinite}
+@keyframes v106{0%{opacity:0}0.000%{opacity:0}12.500%{opacity:1}18.750%{opacity:0}}
+.v106{opacity:0;animation:v106 16.0s step-end infinite}
+@keyframes v107{0%{opacity:0}0.000%{opacity:0}18.750%{opacity:1}25.000%{opacity:0}}
+.v107{opacity:0;animation:v107 16.0s step-end infinite}
+@keyframes v108{0%{opacity:0}0.000%{opacity:0}25.000%{opacity:1}31.250%{opacity:0}}
+.v108{opacity:0;animation:v108 16.0s step-end infinite}
+@keyframes v109{0%{opacity:0}0.000%{opacity:0}31.250%{opacity:1}100.000%{opacity:0}}
+.v109{opacity:0;animation:v109 16.0s step-end infinite}
+@keyframes fade{0%{opacity:1}93%{opacity:1}99%{opacity:0}100%{opacity:0}}
+.card{animation:fade 16.0s linear infinite}</style>
+<rect width="706" height="262" rx="12" fill="#1e1f26"/>
+<rect width="706" height="38" rx="12" fill="#2a2c35"/><rect y="26" width="706" height="12" fill="#2a2c35"/>
+<circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
+<text x="353.0" y="24" text-anchor="middle" fill="#7d8290" font-size="12">monitor: background jobs above the prompt</text>
+<g class="card">
+<rect x="24.0" y="59" width="657.5" height="130" rx="8" fill="none" stroke="#7d8290" stroke-opacity=".6"/>
+<text x="40.9" y="71.0" fill="#d7dae0" xml:space="preserve"></text>
+<text x="40.9" y="71" fill="#d7dae0" xml:space="preserve"></text>
+<text x="40.9" y="71" fill="#d7dae0" font-weight="700" class="v1" xml:space="preserve">Monitor</text>
+<text x="99.9" y="71" fill="#6cb6ff" class="v2" xml:space="preserve">  3 running</text>
+<text x="40.9" y="71" fill="#d7dae0" font-weight="700" class="v3" xml:space="preserve">Monitor</text>
+<text x="99.9" y="71" fill="#6cb6ff" class="v4" xml:space="preserve">  2 running</text>
+<text x="192.6" y="71" fill="#f2777a" class="v5" xml:space="preserve">  1 failed</text>
+<text x="40.9" y="71" fill="#d7dae0" font-weight="700" class="v6" xml:space="preserve">Monitor</text>
+<text x="99.9" y="71" fill="#6cb6ff" class="v7" xml:space="preserve">  1 running</text>
+<text x="192.6" y="71" fill="#8fd694" class="v8" xml:space="preserve">  1 done</text>
+<text x="260.0" y="71" fill="#f2777a" class="v9" xml:space="preserve">  1 failed</text>
+<text x="40.9" y="71" fill="#d7dae0" font-weight="700" class="v10" xml:space="preserve">Monitor</text>
+<text x="99.9" y="71" fill="#8fd694" class="v11" xml:space="preserve">  2 done</text>
+<text x="167.3" y="71" fill="#f2777a" class="v12" xml:space="preserve">  1 failed</text>
+<text x="40.9" y="93" fill="#d7dae0" class="v13" xml:space="preserve">🤖</text>
+<text x="40.9" y="93" fill="#d7dae0" class="v14" xml:space="preserve">✅</text>
+<text x="66.2" y="93" fill="#6cb6ff" font-weight="700" class="v15" xml:space="preserve">research parsers</text>
+<text x="66.2" y="93" fill="#8fd694" class="v16" xml:space="preserve">research parsers</text>
+<rect x="285.3" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v17"/>
+<rect x="285.3" y="84" width="6.9" height="10" rx="2" class="c18"/>
+<rect x="293.8" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v19"/>
+<rect x="293.8" y="84" width="6.9" height="10" rx="2" class="c20"/>
+<rect x="302.2" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v21"/>
+<rect x="302.2" y="84" width="6.9" height="10" rx="2" class="c22"/>
+<rect x="310.6" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v23"/>
+<rect x="310.6" y="84" width="6.9" height="10" rx="2" class="c24"/>
+<rect x="319.1" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v25"/>
+<rect x="319.1" y="84" width="6.9" height="10" rx="2" class="c26"/>
+<rect x="327.5" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v27"/>
+<rect x="327.5" y="84" width="6.9" height="10" rx="2" class="c28"/>
+<rect x="335.9" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v29"/>
+<rect x="335.9" y="84" width="6.9" height="10" rx="2" class="c30"/>
+<rect x="344.3" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v31"/>
+<rect x="344.3" y="84" width="6.9" height="10" rx="2" class="c32"/>
+<rect x="352.8" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v33"/>
+<rect x="352.8" y="84" width="6.9" height="10" rx="2" class="c34"/>
+<rect x="361.2" y="84" width="6.9" height="10" rx="2" fill="#343743" class="v35"/>
+<rect x="361.2" y="84" width="6.9" height="10" rx="2" class="c36"/>
+<text x="378.1" y="93" fill="#7d8290" class="v37" xml:space="preserve">0s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v38" xml:space="preserve">1s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v39" xml:space="preserve">2s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v40" xml:space="preserve">3s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v41" xml:space="preserve">4s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v42" xml:space="preserve">5s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v43" xml:space="preserve">6s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v44" xml:space="preserve">7s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v45" xml:space="preserve">8s</text>
+<text x="378.1" y="93" fill="#7d8290" class="v46" xml:space="preserve">9s</text>
+<text x="285.3" y="93" fill="#8fd694" class="v47" xml:space="preserve">done</text>
+<text x="40.9" y="115" fill="#d7dae0" class="v48" xml:space="preserve">⚙️</text>
+<text x="40.9" y="115" fill="#d7dae0" class="v49" xml:space="preserve">✅</text>
+<text x="66.2" y="115" fill="#6cb6ff" font-weight="700" class="v50" xml:space="preserve">run unit tests</text>
+<text x="66.2" y="115" fill="#8fd694" class="v51" xml:space="preserve">run unit tests</text>
+<rect x="285.3" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v52"/>
+<rect x="285.3" y="106" width="6.9" height="10" rx="2" class="c53"/>
+<rect x="293.8" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v54"/>
+<rect x="293.8" y="106" width="6.9" height="10" rx="2" class="c55"/>
+<rect x="302.2" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v56"/>
+<rect x="302.2" y="106" width="6.9" height="10" rx="2" class="c57"/>
+<rect x="310.6" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v58"/>
+<rect x="310.6" y="106" width="6.9" height="10" rx="2" class="c59"/>
+<rect x="319.1" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v60"/>
+<rect x="319.1" y="106" width="6.9" height="10" rx="2" class="c61"/>
+<rect x="327.5" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v62"/>
+<rect x="327.5" y="106" width="6.9" height="10" rx="2" class="c63"/>
+<rect x="335.9" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v64"/>
+<rect x="335.9" y="106" width="6.9" height="10" rx="2" class="c65"/>
+<rect x="344.3" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v66"/>
+<rect x="344.3" y="106" width="6.9" height="10" rx="2" class="c67"/>
+<rect x="352.8" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v68"/>
+<rect x="352.8" y="106" width="6.9" height="10" rx="2" class="c69"/>
+<rect x="361.2" y="106" width="6.9" height="10" rx="2" fill="#343743" class="v70"/>
+<rect x="361.2" y="106" width="6.9" height="10" rx="2" class="c71"/>
+<text x="378.1" y="115" fill="#7d8290" class="v72" xml:space="preserve">0s</text>
+<text x="378.1" y="115" fill="#7d8290" class="v73" xml:space="preserve">1s</text>
+<text x="378.1" y="115" fill="#7d8290" class="v74" xml:space="preserve">2s</text>
+<text x="378.1" y="115" fill="#7d8290" class="v75" xml:space="preserve">3s</text>
+<text x="378.1" y="115" fill="#7d8290" class="v76" xml:space="preserve">4s</text>
+<text x="378.1" y="115" fill="#7d8290" class="v77" xml:space="preserve">5s</text>
+<text x="378.1" y="115" fill="#7d8290" class="v78" xml:space="preserve">6s</text>
+<text x="285.3" y="115" fill="#8fd694" class="v79" xml:space="preserve">done</text>
+<text x="40.9" y="137" fill="#d7dae0" class="v80" xml:space="preserve">⚙️</text>
+<text x="40.9" y="137" fill="#d7dae0" class="v81" xml:space="preserve">❌</text>
+<text x="66.2" y="137" fill="#6cb6ff" font-weight="700" class="v82" xml:space="preserve">deploy preview</text>
+<text x="66.2" y="137" fill="#f2777a" font-weight="700" class="v83" xml:space="preserve">deploy preview</text>
+<rect x="285.3" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v84"/>
+<rect x="285.3" y="128" width="6.9" height="10" rx="2" class="c85"/>
+<rect x="293.8" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v86"/>
+<rect x="293.8" y="128" width="6.9" height="10" rx="2" class="c87"/>
+<rect x="302.2" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v88"/>
+<rect x="302.2" y="128" width="6.9" height="10" rx="2" class="c89"/>
+<rect x="310.6" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v90"/>
+<rect x="310.6" y="128" width="6.9" height="10" rx="2" class="c91"/>
+<rect x="319.1" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v92"/>
+<rect x="319.1" y="128" width="6.9" height="10" rx="2" class="c93"/>
+<rect x="327.5" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v94"/>
+<rect x="327.5" y="128" width="6.9" height="10" rx="2" class="c95"/>
+<rect x="335.9" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v96"/>
+<rect x="335.9" y="128" width="6.9" height="10" rx="2" class="c97"/>
+<rect x="344.3" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v98"/>
+<rect x="344.3" y="128" width="6.9" height="10" rx="2" class="c99"/>
+<rect x="352.8" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v100"/>
+<rect x="352.8" y="128" width="6.9" height="10" rx="2" class="c101"/>
+<rect x="361.2" y="128" width="6.9" height="10" rx="2" fill="#343743" class="v102"/>
+<rect x="361.2" y="128" width="6.9" height="10" rx="2" class="c103"/>
+<text x="378.1" y="137" fill="#7d8290" class="v104" xml:space="preserve">0s</text>
+<text x="378.1" y="137" fill="#7d8290" class="v105" xml:space="preserve">1s</text>
+<text x="378.1" y="137" fill="#7d8290" class="v106" xml:space="preserve">2s</text>
+<text x="378.1" y="137" fill="#7d8290" class="v107" xml:space="preserve">3s</text>
+<text x="378.1" y="137" fill="#7d8290" class="v108" xml:space="preserve">4s</text>
+<text x="285.3" y="137" fill="#f2777a" class="v109" xml:space="preserve">failed  needs you</text>
+<text x="40.9" y="159">🧠</text>
+<text x="66.2" y="159" fill="#7d8290" xml:space="preserve">context</text>
+<rect x="285.3" y="150" width="6.9" height="10" rx="2" fill="#8fd694"/>
+<rect x="293.8" y="150" width="6.9" height="10" rx="2" fill="#8fd694"/>
+<rect x="302.2" y="150" width="6.9" height="10" rx="2" fill="#8fd694"/>
+<rect x="310.6" y="150" width="6.9" height="10" rx="2" fill="#8fd694"/>
+<rect x="319.1" y="150" width="6.9" height="10" rx="2" fill="#343743"/>
+<rect x="327.5" y="150" width="6.9" height="10" rx="2" fill="#343743"/>
+<rect x="335.9" y="150" width="6.9" height="10" rx="2" fill="#343743"/>
+<rect x="344.3" y="150" width="6.9" height="10" rx="2" fill="#343743"/>
+<rect x="352.8" y="150" width="6.9" height="10" rx="2" fill="#343743"/>
+<rect x="361.2" y="150" width="6.9" height="10" rx="2" fill="#343743"/>
+<text x="378.1" y="159" fill="#8fd694" xml:space="preserve">35%</text>
+<text x="411.8" y="159" fill="#7d8290" xml:space="preserve">70k/200k</text>
+<text x="24.0" y="225" fill="#c3a6ff" font-weight="700" xml:space="preserve">❯</text>
+<text x="40.9" y="225" fill="#d7dae0" xml:space="preserve">▏</text>
+</g>
+</svg>

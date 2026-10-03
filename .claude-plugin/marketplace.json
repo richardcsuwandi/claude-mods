@@ -18,7 +18,12 @@
       "name": "context-bar",
       "source": "./plugins/context-bar",
       "description": "Stacked context-window bar above the prompt, colored like /context. Toggle with /context-bar."
+    },
+    {
+      "name": "monitor",
+      "source": "./plugins/monitor",
+      "description": "A control room above the prompt: background agents and shells (running, done, failed), blocked tool calls and context usage. /monitor pins it."
     }
   ],
-  "description": "Claude Code mods by Richard Suwandi: deadline countdowns, usage and context bars."
+  "description": "Claude Code mods by Richard Suwandi: deadline countdowns, usage and context bars, and a background-job monitor."
 }

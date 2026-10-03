@@ -1,0 +1,7 @@
+{
+  "name": "monitor",
+  "version": "0.1.0",
+  "description": "A control room above the prompt: background agents and shells (running, done, failed), blocked tool calls and context usage. /monitor pins it.",
+  "author": { "name": "Richard Suwandi" },
+  "types": "./types/index.d.ts"
+}
