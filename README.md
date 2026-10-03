@@ -6,7 +6,7 @@ My [Claude Code mods](https://claude.com/blog/claude-code-mods).
 
 ```
 /plugin marketplace add richardcsuwandi/claude-mods
-/plugin install deadlines@richard-mods
+/plugin install deadlines@claude-mods
 /reload-plugins
 ```
 
